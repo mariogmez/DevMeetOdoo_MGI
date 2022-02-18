@@ -1,0 +1,45 @@
+<!-- Los ficheros de datos son aquellos que permiten que un módulo añada datos a la BDD 
+Un ejemplo es views.xml que añade datos a tablas. Por ejemplo, introduce datos en el modelo ir.ui.view.
+Cada field será una de las columnas que se guardan, por tanto esto, ya es un fichero de datos.
+
+Vamos a hacer otro fichero de datos de demo para que si seleccionan la opción de demo, tengamos estudiantes
+sobre los que trabajar.
+
+Podemos tener un CSV que cumpla la estructura del modelo y se pueden importar datos directamente mediante la aplicación
+de Odoo, mediante la opción de importar. Esta sería la opción de hacerlo cuando
+ya está en producción y queremos importar datos.
+
+También tenemos la opción de hacerlo en este fichero.
+-->
+<odoo>
+  <data>
+
+    <record id="teacher1" model="school.teacher">
+      <field name="name">José Alberto</field>
+    </record>
+
+    <record id="teacher2" model="school.teacher">
+      <field name="name">Fernando</field>
+    </record>
+
+    <record id="student1" model="school.student">
+      <field name="name">Luisa</field>
+      <field name="dni">23456789N</field>      <!-- Dni tiene que cumplir las restricciones -->
+    </record>
+
+    <record id="classroom1" model="school.classroom">
+      <field name="name">DAM2</field>
+      <field name="teachers" eval="[(6,0,[ref('school.teacher1'),ref('school.teacher2')])]"></field>
+     </record>
+
+
+
+
+    <record id="classroom1" model="school.classroom">
+      <field name="name">DAM2</field>
+      <field name="teachers" eval="[(6,0,[ref('school.teacher1'),ref('school.teacher2')])]"></field>
+
+    </record>
+
+  </data>
+</odoo>

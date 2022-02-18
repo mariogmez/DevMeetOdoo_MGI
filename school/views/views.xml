@@ -1,0 +1,98 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!-- Vistas tree: son las más fáciles de hacer. Record indica que se almacena algo en BDD, concretamente una vista porque se almacena en el modelo ir.ui.view
+    Las vistas para funcionar necesitan saber:
+    - Un no mbre que debería ser único
+    - El modelo sobre el que se implementa la vista
+    - Un archivo xml que indicará el tipo de vista. En este caso sólo tenemos especificado algo para la vista tree,
+    concretamente los campos que se van a mostrar en dicha vista. El resto de tipos de vistas lo tomará por defecto.
+    Todo esto después es interpretado por la aplicación cliente, en este caso JS de Odoo y será convertido en HTML. 
+    
+    No se hace en el backend en el servidor, sino en el frontend.
+    
+    Además de lo que conocemos podemos cambiar colores de algunas de las filas en función de algún criterio
+    
+    Hay distintos tipos de decoración aplicables que podéis consultar en la documentación, por ejemplo:
+
+    https://www.iwesabe.com/blog/how-to-add-colors-to-tree-view-in-odoo
+    
+    -->
+     <record model="ir.ui.view" id="school.student_list">
+      <field name="name">school.student list</field>
+      <field name="model">school.student</field>
+      <field name="arch" type="xml">
+        <tree decoration-info="birth_year>2000" decoration-warning="birth_year&lt;1980"> 
+          <field name="name"/>
+          <field name="password" />
+          <field name="birth_year" sum="Total"/> <!-- Tengo la posibilidad de añadir totales aunque
+          no tenga mucho sentido aquí-->
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="school.action_student_window">
+      <field name="name">school student window</field>
+      <field name="res_model">school.student</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="school.action_classroom_window">
+      <field name="name">school classroom window</field>
+      <field name="res_model">school.classroom</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="school.action_teacher_window">
+      <field name="name">school teacher window</field>
+      <field name="res_model">school.teacher</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="school.action_server">
+      <field name="name">school server</field>
+      <field name="model_id" ref="model_school_school"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="school" id="school.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="school.menu_1" parent="school.menu_root"/>
+    <menuitem name="Menu 2" id="school.menu_2" parent="school.menu_root"/>
+-->
+    <!-- actions -->
+    <!--Top menú item-->
+    
+    <menuitem name="School" id="school.menu_root"/>
+ 
+    <!-- Menú categories-->
+    <menuitem name="Management" id="school.menu_1" parent="school.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Students" id="school.menu_student_list" parent="school.menu_1"
+      action="school.action_student_window"/>
+
+    <menuitem name="Classrooms" id="school.menu_classroom_list" parent="school.menu_1"
+      action="school.action_classroom_window"/>
+
+    <menuitem name="Teachers" id="school.menu_teacher_list" parent="school.menu_1"
+      action="school.action_teacher_window"/>
+  </data>
+</odoo>
