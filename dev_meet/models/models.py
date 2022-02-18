@@ -6,11 +6,10 @@ import re
 
 class developer(models.Model):
     _name = 'dev_meet.developer'
-    _description = 'dev_meet.developer'
+    _description = 'Desarrollador'
 
     
     name = fields.Char(string="Nombre", readonly=False, required=True, help='Este es el nombre')
-    description = fields.Text()
     birth_year = fields.Integer()
     dni = fields.Char(string="DNI")
     photo = fields.Image(max_width=200, max_height=200)
@@ -37,10 +36,9 @@ class developer(models.Model):
 
 class tecnologia(models.Model):
     _name = 'dev_meet.tecnologia'
-    _description = 'dev_meet.tecnologia'
+    _description = 'Tecnologias'
 
     name = fields.Char()
-    description = fields.Text() 
     pageoficial = fields.Char(string="Pagina oficial")
     logo = fields.Image(max_width=100, max_height=100)
 
@@ -49,10 +47,9 @@ class tecnologia(models.Model):
 
 class evento(models.Model):
     _name = 'dev_meet.evento'
-    _description = 'dev_meet.evento'
+    _description = 'Eventos'
 
     name = fields.Char()
-    description = fields.Text()
     fechainicio = fields.Integer()
     fechafin = fields.Integer()
     presencial = fields.Boolean()
