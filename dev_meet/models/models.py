@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
+import logging
 import re
 
+_logger = logging.getLogger(__name__)
 
 class developer(models.Model):
     _name = 'dev_meet.developer'
@@ -10,7 +12,7 @@ class developer(models.Model):
 
     
     name = fields.Char(string="Nombre", readonly=False, required=True, help='Este es el nombre')
-    birth_year = fields.Integer()
+    birth_year = fields.Date(string="Fecha nacimiento")
     dni = fields.Char(string="DNI")
     photo = fields.Image(max_width=200, max_height=200)
 
@@ -19,19 +21,15 @@ class developer(models.Model):
 
     @api.constrains('dni')
     def _check_dni(self):
-        regex = re.compile('[0-9]{8}[a-z]\Z', re.I) #re.I ignoreCase
+        regex = re.compile('[0-9]{8}[a-z]\Z', re.I) 
         for student in self:
-            # Ahora vamos a validar si se cumple la condición
+
             if regex.match(student.dni):
                 _logger.info('DNI correcto')
             else:
-                # No coinciden por lo que tenemos que informar e impedir que se guarde
                 raise ValidationError('Formato incorrecto: DNI')
-                # Si el DNI no es válido no nos permitirá guardar
 
-    _sql_constraints = [('dni_uniq', 'unique(dni)', 'DNI can\'t be repeated')] #Todos los mensajes los deberíamos poner en inglés y luego traducir
-
-
+    _sql_constraints = [('dni_uniq', 'unique(dni)', 'DNI can\'t be repeated')]
 
 
 class tecnologia(models.Model):
