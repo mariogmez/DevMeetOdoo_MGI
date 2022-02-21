@@ -1,129 +1,123 @@
 <odoo>
 <data>
-<record id='63915903B' model='school.student'>
+<record id='63915903B' model='dev_meet.developer'>
 <field name='name'>Daren Jammet</field>
 <field name='dni'>63915903B</field>
 <field name='birth_year'>13/02/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='22277595T' model='school.student'>
+<record id='22277595T' model='dev_meet.developer'>
 <field name='name'>Ibby McCane</field>
 <field name='dni'>22277595T</field>
 <field name='birth_year'>30/01/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='19178649W' model='school.student'>
+<record id='19178649W' model='dev_meet.developer'>
 <field name='name'>Katharine Manville</field>
 <field name='dni'>19178649W</field>
 <field name='birth_year'>08/04/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='39100024A' model='school.student'>
+<record id='39100024A' model='dev_meet.developer'>
 <field name='name'>Carry Bickersteth</field>
 <field name='dni'>39100024A</field>
 <field name='birth_year'>20/08/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='38769422Y' model='school.student'>
+<record id='38769422Y' model='dev_meet.developer'>
 <field name='name'>Syd Pfeffel</field>
 <field name='dni'>38769422Y</field>
 <field name='birth_year'>11/09/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='11218150F' model='school.student'>
+<record id='11218150F' model='dev_meet.developer'>
 <field name='name'>Wanids Brunsden</field>
 <field name='dni'>11218150F</field>
 <field name='birth_year'>29/06/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='21700387Z' model='school.student'>
+<record id='21700387Z' model='dev_meet.developer'>
 <field name='name'>Clayton Cherryman</field>
 <field name='dni'>21700387Z</field>
 <field name='birth_year'>16/02/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='01670637C' model='school.student'>
+<record id='01670637C' model='dev_meet.developer'>
 <field name='name'>Zabrina Pelosi</field>
 <field name='dni'>01670637C</field>
 <field name='birth_year'>27/03/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='68750122A' model='school.student'>
+<record id='68750122A' model='dev_meet.developer'>
 <field name='name'>Nanon Laughnan</field>
 <field name='dni'>68750122A</field>
 <field name='birth_year'>05/12/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='80165426J' model='school.student'>
+<record id='80165426J' model='dev_meet.developer'>
 <field name='name'>Sharyl Dunbavin</field>
 <field name='dni'>80165426J</field>
 <field name='birth_year'>04/02/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='01986010P' model='school.student'>
+<record id='01986010P' model='dev_meet.developer'>
 <field name='name'>Carol-jean Forryan</field>
 <field name='dni'>01986010P</field>
 <field name='birth_year'>03/06/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='42331582S' model='school.student'>
+<record id='42331582S' model='dev_meet.developer'>
 <field name='name'>Joshua Glader</field>
 <field name='dni'>42331582S</field>
 <field name='birth_year'>15/11/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='61934320N' model='school.student'>
+<record id='61934320N' model='dev_meet.developer'>
 <field name='name'>Sidonnie Illingworth</field>
 <field name='dni'>61934320N</field>
 <field name='birth_year'>08/08/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='41307449Y' model='school.student'>
+<record id='41307449Y' model='dev_meet.developer'>
 <field name='name'>Gert Haine</field>
 <field name='dni'>41307449Y</field>
 <field name='birth_year'>02/08/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='28387277G' model='school.student'>
+<record id='28387277G' model='dev_meet.developer'>
 <field name='name'>Chance Holdren</field>
 <field name='dni'>28387277G</field>
 <field name='birth_year'>31/10/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='98733088L' model='school.student'>
+<record id='98733088L' model='dev_meet.developer'>
 <field name='name'>Kipper Rydeard</field>
 <field name='dni'>98733088L</field>
 <field name='birth_year'>19/01/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='29033594B' model='school.student'>
+<record id='29033594B' model='dev_meet.developer'>
 <field name='name'>Myrah Poag</field>
 <field name='dni'>29033594B</field>
 <field name='birth_year'>04/07/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='15926945C' model='school.student'>
+<record id='15926945C' model='dev_meet.developer'>
 <field name='name'>Nye Fradson</field>
 <field name='dni'>15926945C</field>
 <field name='birth_year'>12/08/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='29525581S' model='school.student'>
+<record id='29525581S' model='dev_meet.developer'>
 <field name='name'>Kingsley Moreman</field>
 <field name='dni'>29525581S</field>
 <field name='birth_year'>20/05/2021</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
-<record id='12202549V' model='school.student'>
+<record id='12202549V' model='dev_meet.developer'>
 <field name='name'>Mamie Obal</field>
 <field name='dni'>12202549V</field>
 <field name='birth_year'>27/06/2021</field>
-<field name='tecnologia' ref='dev_meet.tecnologia1'></field>
-</record>
-<record id='' model='school.student'>
-<field name='name'></field>
-<field name='dni'></field>
-<field name='birth_year'></field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
 </data>
