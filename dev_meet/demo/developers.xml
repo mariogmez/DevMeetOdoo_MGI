@@ -1,8 +1,8 @@
 <odoo>
 <data>
-<record id='63915903B' model='dev_meet.developer'>
+<record id='05723026M' model='dev_meet.developer'>
 <field name='name'>Daren Jammet</field>
-<field name='dni'>63915903B</field>
+<field name='dni'>05723026M</field>
 <field name='birth_year'>13/02/2022</field>
 <field name='tecnologia' ref='dev_meet.tecnologia1'></field>
 </record>
