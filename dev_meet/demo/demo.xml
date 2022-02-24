@@ -1,7 +1,20 @@
 <odoo>
     <data>
-          <record id="tecnologia1" model="dev_meet.tecnologia">
+          <record id='tecnologia1' model="dev_meet.tecnologia">
             <field name="name">Java</field>
-          </record>     
+          </record>    
+
+          <record id='05723026M' model='dev_meet.developer'>
+            <field name='name'>Daren Jammet</field>
+            <field name='dni'>05723026M</field>
+            <field name='birth_year'>2022-02-02</field>
+            <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia1')])]"></field>
+          </record>  
+          <record id='05711564C' model='dev_meet.developer'>
+            <field name='name'>Cam Haugh</field>
+            <field name='dni'>05711564C</field>
+            <field name='birth_year'>2022-02-02</field>
+          </record>        
+
     </data>
 </odoo>
