@@ -10,8 +10,7 @@ do
     echo "<field name='name'>$nombre</field>"
     echo "<field name='dni'>$dni</field>"
     echo "<field name='birth_year'>$year</field>"
-    echo "<field name='tecnologia' eval='[(6,0,[ref('dev_meet.tecnologia1')])]'></field>"
-   
+    echo "<field name="\""tecnologia"\"" eval="\""[(6,0,[ref('dev_meet.tecnologia1')])]"\""></field>" 
     echo "</record>"
 done
 echo "</data>"
