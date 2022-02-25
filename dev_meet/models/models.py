@@ -16,7 +16,13 @@ class developer(models.Model):
     dni = fields.Char(string="DNI")
     photo = fields.Image(max_width=200, max_height=200)
 
-    tecnologia = fields.Many2many(comodel_name='dev_meet.tecnologia', relation='tecnologia_developer', column1='developer_id', column2='tecnologia_id')
+
+
+    tecnologia = fields.Many2many(comodel_name='dev_meet.tecnologia',
+                                relation='tecnologia_developer',
+                                column1='developer_id',
+                                column2='tecnologia_id')                            
+
     evento = fields.Many2many(comodel_name='dev_meet.evento', relation='developer_evento', column1='developer_id', column2='evento_id')
     
     @api.constrains('dni')
@@ -40,8 +46,13 @@ class tecnologia(models.Model):
     pageoficial = fields.Char(string="Pagina oficial")
     logo = fields.Image(max_width=100, max_height=100)
 
+    developer = fields.Many2many(comodel_name='dev_meet.developer',
+                                  relation='tecnologia_developer',
+                                  column1='tecnologia_id',
+                                  column2='developer_id')
+
     evento = fields.Many2many(comodel_name='dev_meet.evento', relation='tecnologia_evento', column1='tecnologia_id', column2='evento_id')
-    developer = fields.Many2many(comodel_name='dev_meet.developer', relation='developer_tecnologia', column1='tecnologia_id', column2='developer_id')
+    
 
 class evento(models.Model):
     _name = 'dev_meet.evento'

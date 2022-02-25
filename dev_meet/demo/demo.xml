@@ -1,7 +1,7 @@
 <odoo>
     <data>
-          <record id='tecnologia1' model="dev_meet.tecnologia">
-            <field name="name">Java</field>
+          <record id='tecnologia2' model="dev_meet.tecnologia">
+            <field name="name">Python</field>
           </record>    
     </data>
 </odoo>
