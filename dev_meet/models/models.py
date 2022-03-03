@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import string
+from urllib import request
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 import logging
@@ -14,7 +15,7 @@ class developer(models.Model):
     #CAMPOS
     name = fields.Char(string="Nombre", readonly=False, required=True, help='Este es el nombre')
     birth_year = fields.Date(string="Fecha nacimiento")
-    dni = fields.Char(string="DNI")
+    dni = fields.Char(string="DNI", request="True")
 
 
     #RELACION CON LOS MODELOS
@@ -72,7 +73,7 @@ class evento(models.Model):
                                   column2='developer_id')
 
     clases = fields.Many2one("dev_meet.clases", ondelete='set null', help='Clase a la que pertenece')
-    tecnologia = fields.Many2one("dev_meet.tecnologia", ondelete='set null', help='Clase a la que pertenece')
+    tecnologia = fields.Many2one("dev_meet.tecnologia", ondelete='set null', help='Tecnologia a la que pertenece')
    
 class clases (models.Model):
     _name = 'dev_meet.clases'
