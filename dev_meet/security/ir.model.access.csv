@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_dev_meet_developer,dev_meet.developer,model_dev_meet_developer,base.group_user,1,1,1,1
 access_dev_meet_tecnologia,dev_meet.tecnologia,model_dev_meet_tecnologia,base.group_user,1,1,1,1
 access_dev_meet_evento,dev_meet.evento,model_dev_meet_evento,base.group_user,1,1,1,1
+access_dev_meet_clases,dev_meet.clases,model_dev_meet_clases,base.group_user,1,1,1,1

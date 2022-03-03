@@ -175,6 +175,66 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="dev_meet.evento_form">
+      <field name="name">dev_meet.evento form </field>
+      <field name="model">dev_meet.evento</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group string="Datos de la charla:">
+                <field name="name"/>
+                <field name="fechainicio"/>
+                <field name="fechafin" />
+                <field name="presencial" />
+              </group>
+            </group>
+            <group>
+              <notebook>
+                <page string="Developers">
+                  <field name="developer">
+                    <tree>
+                      <field name="name"/>
+                   </tree>
+                  </field>
+                </page>
+                <page string="Tecnologias">
+                  <field name="tecnologia"/>                           
+                </page>
+                <page string="clases" attrs="{'invisible':[('presencial','=',False)], 'required':[('presencial','=',True)]}">
+                  <field name="clases" />
+                  <tree>
+                      <field name="name" />
+                  </tree>
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="dev_meet.evento_calendar">
+      <field name="name">dev_meet.evento calendar </field>
+      <field name="model">dev_meet.evento</field>
+      <field name="arch" type="xml">
+        <calendar string="Event calendar" date_start="fechainicio" date_stop="fechafin" color="name">
+          <field name="name" />
+        </calendar>
+      </field>
+    </record>
+
+    <!-- CLASES -->
+     <record model="ir.ui.view" id="dev_meet.clases_list">
+      <field name="name">dev_meet.clases list</field>
+      <field name="model">dev_meet.clases</field>
+      <field name="arch" type="xml">
+        <tree decoration-primary="id%2">
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
     
 
     <!-- actions opening views on models -->
@@ -194,24 +254,16 @@
     <record model ="ir.actions.act_window" id="dev_meet.action_evento_window">
       <field name="name">Eventos</field>
       <field name="res_model">dev_meet.evento</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form,calendar</field>
     </record>
 
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="dev_meet.action_server">
-      <field name="name">dev_meet server</field>
-      <field name="model_id" ref="model_dev_meet_dev_meet"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
+    <record model ="ir.actions.act_window" id="dev_meet.action_clases_window">
+      <field name="name">Clases</field>
+      <field name="res_model">dev_meet.clases</field>
+      <field name="view_mode">tree,form</field>
     </record>
--->
+
+
 
     <!-- Top menu item -->
 
@@ -227,8 +279,11 @@
     <menuitem name="Tecnologias" id="dev_meet.menu_tecnologia_list" parent="dev_meet.menu_1"
               action="dev_meet.action_tecnologia_window"/>
 
-    <menuitem name="Eventos" id="dev_meet.menu_eventno_list" parent="dev_meet.menu_1"
-              action="dev_meet.action_evento_window"/>          
+    <menuitem name="Eventos" id="dev_meet.menu_evento_list" parent="dev_meet.menu_1"
+              action="dev_meet.action_evento_window"/>             
+
+    <menuitem name="Clases" id="dev_meet.menu_clases_list" parent="dev_meet.menu_1"
+              action="dev_meet.action_clases_window"/>      
 
   </data>
 </odoo>

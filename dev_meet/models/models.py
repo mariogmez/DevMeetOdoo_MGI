@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import string
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 import logging
@@ -61,11 +62,16 @@ class evento(models.Model):
     _description = 'Eventos'
 
     name = fields.Char()
-    fechainicio = fields.Integer()
-    fechafin = fields.Integer()
+    fechainicio = fields.Datetime(string="Fecha Inicio")
+    fechafin = fields.Datetime(string="Fecha fin")
     presencial = fields.Boolean()
 
-    developer = fields.Many2many(comodel_name='dev_meet.developer', relation='evento_developer', column1='evento_id', column2='developer_id',readonly=True)
+    developer = fields.Many2many('dev_meet.developer')
+    clases = fields.Many2one("dev_meet.clases", ondelete='set null', help='Clase a la que pertenece')
     tecnologia = fields.Many2one("dev_meet.tecnologia", ondelete='set null', help='Clase a la que pertenece')
    
-   
+class clases (models.Model):
+    _name = 'dev_meet.clases'
+    _description = 'Eventos'
+
+    name = fields.Char()
