@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+
+        <record id='evento1' model="dev_meet.evento">
+            <field name="name">Desarrollo modulos odoo</field>
+            <field name="fechainicio">2022-03-03</field>
+            <field name="fechafin">2022-03-03</field>
+            <field name="presencial">True</field>
+            <field name="tecnologia">2</field>
+            <field name="clases">2</field>
+        </record> 
+
+        <record id='evento2' model="dev_meet.evento">
+            <field name="name">Desarrollo aplicaciones moviles</field>
+            <field name="fechainicio">2022-03-04</field>
+            <field name="fechafin">2022-03-04</field>
+            <field name="presencial">False</field>
+            <field name="tecnologia">1</field>
+          </record> 
+
+    </data>
+</odoo>

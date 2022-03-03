@@ -33,7 +33,8 @@
         'demo/demo.xml',
         'demo/tecnologiaJava.xml',
         'demo/tecnologiaPython.xml',
-        'demo/developersPython.xml',
-        'demo/developersJava.xml'
+        'demo/eventos.xml',
+        'demo/developersPython.xml',      
+        'demo/developersJava.xml'     
     ],
 }

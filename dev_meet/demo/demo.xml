@@ -10,16 +10,7 @@
             <field name="name">C103</field>
             <field name="planta">1</field>
             <field name="capacidad">62</field>
-          </record>  
-
-          <record id='evento1' model="dev_meet.evento">
-            <field name="name">Desarrollo modulos odoo</field>
-            <field name="fechainicio">2022-03-03</field>
-            <field name="fechafin">2022-03-03</field>
-            <field name="presencial">True</field>
-            <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
           </record> 
-
    
     </data>
 </odoo>

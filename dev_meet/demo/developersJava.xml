@@ -5,12 +5,14 @@
 <field name='dni'>33845714M</field>
 <field name='birth_year'>2017-02-23</field>
 <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia1')])]"></field>
+<field name="evento" eval="[(6,0,[ref('dev_meet.evento2')])]"></field>
 </record>
 <record id='39481148D' model='dev_meet.developer'>
 <field name='name'>Brandy Riccardo</field>
 <field name='dni'>39481148D</field>
 <field name='birth_year'>2012-10-07</field>
 <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia1')])]"></field>
+<field name="evento" eval="[(6,0,[ref('dev_meet.evento2')])]"></field>
 </record>
 <record id='66822828N' model='dev_meet.developer'>
 <field name='name'>Sigismund McLardie</field>

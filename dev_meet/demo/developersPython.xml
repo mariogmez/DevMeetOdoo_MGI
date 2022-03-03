@@ -5,18 +5,21 @@
 <field name='dni'>16501718G</field>
 <field name='birth_year'>2022-01-04</field>
 <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+<field name="evento" eval="[(6,0,[ref('dev_meet.evento1')])]"></field>
 </record>
 <record id='02764224H' model='dev_meet.developer'>
 <field name='name'>Nevins Allkins</field>
 <field name='dni'>02764224H</field>
 <field name='birth_year'>2019-09-09</field>
 <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+<field name="evento" eval="[(6,0,[ref('dev_meet.evento1')])]"></field>
 </record>
 <record id='45498248M' model='dev_meet.developer'>
 <field name='name'>Sharyl McCartan</field>
 <field name='dni'>45498248M</field>
 <field name='birth_year'>2021-01-30</field>
 <field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+<field name="evento" eval="[(6,0,[ref('dev_meet.evento1')])]"></field>
 </record>
 <record id='80968310N' model='dev_meet.developer'>
 <field name='name'>Adore Whistance</field>
