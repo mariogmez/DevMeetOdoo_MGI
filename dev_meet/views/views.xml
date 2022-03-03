@@ -47,6 +47,22 @@
       </field>
     </record>
 
+    <record id="dev_meet.developer_search" model="ir.ui.view">
+      <field name="name">dev_meet.developer search</field>
+      <field name="model">dev_meet.developer</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name" />
+          <field name="dni" />
+          <field name="tecnologia" />
+          <field name="evento" />
+          <filter name="java" string="Java" domain="[('tecnologia', '&lt;=', 'Java')]"></filter>
+          <filter name="python" string="Python" domain="[('tecnologia', '&lt;=', 'Python')]"></filter>
+          <filter name="group_by_Fecha" string="Agrupar por fecha" context="{'group_by': 'birth_year'}"></filter>
+        </search>
+      </field>
+    </record>
+
     <record id="dev_meet.developer_kanban" model="ir.ui.view">
       <field name="name">dev_meet.developer kanban</field>
       <field name="model">dev_meet.developer</field>
@@ -169,7 +185,7 @@
       <field name="name">dev_meet.evento list </field>
       <field name="model">dev_meet.evento</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree decoration-primary="id%2">
           <field name="name"/>
         </tree>
       </field>
@@ -193,7 +209,7 @@
               <notebook>
                 <page string="Developers">
                   <field name="developer">
-                    <tree>
+                    <tree decoration-primary="id%2">
                       <field name="name"/>
                    </tree>
                   </field>
@@ -203,9 +219,6 @@
                 </page>
                 <page string="clases" attrs="{'invisible':[('presencial','=',False)], 'required':[('presencial','=',True)]}">
                   <field name="clases" />
-                  <tree>
-                      <field name="name" />
-                  </tree>
                 </page>
               </notebook>
             </group>
@@ -232,6 +245,24 @@
         <tree decoration-primary="id%2">
           <field name="name"/>
         </tree>
+      </field>
+    </record>
+
+    <record id="dev_meet.clases_form" model="ir.ui.view">
+      <field name="name">dev_meet.clases form</field>
+      <field name="model">dev_meet.clases</field>
+      <field name="arch" type="xml">
+        <form string="">
+
+          <sheet style="width: 10px;" width="10px">       
+            <group string="Datos Aula">
+                <field name="name" />
+                <field name="planta" />
+                <field name="capacidad" />
+            </group>         
+          </sheet>
+
+        </form>
       </field>
     </record>
 

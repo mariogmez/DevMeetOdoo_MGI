@@ -24,7 +24,7 @@ class developer(models.Model):
                                  column2='tecnologia_id')                            
 
     evento = fields.Many2many(comodel_name='dev_meet.evento', 
-                              relation='developer_evento', 
+                              relation='evento_developer', 
                               column1='developer_id', 
                               column2='evento_id')
    
@@ -66,7 +66,11 @@ class evento(models.Model):
     fechafin = fields.Datetime(string="Fecha fin")
     presencial = fields.Boolean()
 
-    developer = fields.Many2many('dev_meet.developer')
+    developer = fields.Many2many(comodel_name='dev_meet.developer',
+                                  relation='evento_developer',
+                                  column1='evento_id',
+                                  column2='developer_id')
+
     clases = fields.Many2one("dev_meet.clases", ondelete='set null', help='Clase a la que pertenece')
     tecnologia = fields.Many2one("dev_meet.tecnologia", ondelete='set null', help='Clase a la que pertenece')
    
@@ -75,3 +79,5 @@ class clases (models.Model):
     _description = 'Eventos'
 
     name = fields.Char()
+    planta = fields.Integer()
+    capacidad = fields.Integer()
