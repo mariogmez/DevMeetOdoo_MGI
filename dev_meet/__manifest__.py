@@ -31,7 +31,9 @@
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
-        'demo/tecnologia.xml',
-        'demo/developers.xml'
+        'demo/tecnologiaJava.xml',
+        'demo/tecnologiaPython.xml',
+        'demo/developersPython.xml',
+        'demo/developersJava.xml'
     ],
 }

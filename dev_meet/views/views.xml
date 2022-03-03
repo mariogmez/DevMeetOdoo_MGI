@@ -1,28 +1,170 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
+    <!-- DEVELOPER-->
     <record model="ir.ui.view" id="dev_meet.developer_list">
       <field name="name">dev_meet.developer list</field>
       <field name="model">dev_meet.developer</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree decoration-primary="id%2">
           <field name="name"/>
+          <field name="tecnologia"/>
+          <field name="birth_year"/>
         </tree>
       </field>
     </record>
+
+    <record model="ir.ui.view" id="dev_meet.developer_form">
+      <field name="name">dev_meet.developer form </field>
+      <field name="model">dev_meet.developer</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group string="Datos Personales">
+                <field name="name"/>
+                <field name="birth_year"/>
+                <field name="dni"/>
+              </group>
+            </group>
+            <group>
+              
+              <notebook width="12px">
+                <page string="Tecnologias">
+                  <field name="tecnologia">
+                    <tree decoration-primary="id%2">
+                      <field name="name"/>
+                    </tree>                
+                  </field>
+                </page>
+                <page string="Eventos">
+                <field name="evento"/>                           
+                </page>
+            </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="dev_meet.developer_kanban" model="ir.ui.view">
+      <field name="name">dev_meet.developer kanban</field>
+      <field name="model">dev_meet.developer</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"></field>
+          <templates>
+            <t t-name="kanban-box">
+              <div>
+                  <div style="width: 40%;float:left;">
+                    <h5>
+                      <a type="edit">
+                        <field name="name"></field>
+                      </a>
+                    </h5>
+                    <field name="dni"></field>
+                    <br></br>
+                    <field name="birth_year"></field>
+                  </div>
+
+                  <div style="width: 60%; height: 100%; background-color: rgba(0,0,255,0.1);float:right; align: left;">
+                    Tecnologias:
+                    <br></br>
+                    <ul>
+                        <field name="tecnologia"></field>
+                    </ul>
+                  </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+
+
+    <!-- TECNOLOGIA -->
 
     <record model="ir.ui.view" id="dev_meet.tecnologia_list">
       <field name="name">dev_meet.tecnologia list </field>
       <field name="model">dev_meet.tecnologia</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree decoration-primary="id%2">
           <field name="name"/>
           <field name="pageoficial"/>
         </tree>
       </field>
     </record>
 
+    <record model="ir.ui.view" id="dev_meet.tecnologia_form">
+      <field name="name">dev_meet.tecnologia form </field>
+      <field name="model">dev_meet.tecnologia</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            
+            <group>
+              <group string="Tecnologia:">
+                  <group>
+                    <field name="name"/>
+                  </group>
+                  <group>
+                    <field name="logo" widget="image" class="oe_avatar"/>
+                  </group>                            
+              </group>
+            </group>
+            <group>
+              <notebook >
+                <page string="Developers">
+                  <field name="developer" >
+                    <tree decoration-primary="id%2">
+                      <field name="name" />
+                      <field name="dni"/>
+                      <field name="birth_year"/>
+                   </tree>
+                  </field>
+                </page>
+                <page string="Eventos">
+                  <field name="evento"/>                           
+                </page>
+              </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="dev_meet.tecnologia_kanban" model="ir.ui.view">
+      <field name="name">dev_meet.tecnologia kanban</field>
+      <field name="model">dev_meet.tecnologia</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <field name="id"></field>
+          <templates>
+            <t t-name="kanban-box">
+              <div>
+                  <div style="width: 40%;float:left;">
+                    <h5>
+                      <a type="edit">
+                        <field name="name"></field>
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div style="width: 60%; height: 100%; background-color: rgba(0,0,255,0.1);float:right; align: left;">
+                    
+                    <ul>
+                        <field name="logo" widget="image" class="oe_avatar"/>
+                    </ul>
+                  </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <!-- EVENTO-->
     <record model="ir.ui.view" id="dev_meet.evento_list">
       <field name="name">dev_meet.evento list </field>
       <field name="model">dev_meet.evento</field>
@@ -33,24 +175,26 @@
       </field>
     </record>
 
+    
+
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="dev_meet.action_developer_window">
-      <field name="name">dev_meet developer window</field>
+      <field name="name">Desarrolladores</field>
       <field name="res_model">dev_meet.developer</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model ="ir.actions.act_window" id="dev_meet.action_tecnologia_window">
-      <field name="name">dev_meet tecnologia window</field>
+      <field name="name">Tecnologias</field>
       <field name="res_model">dev_meet.tecnologia</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model ="ir.actions.act_window" id="dev_meet.action_evento_window">
-      <field name="name">dev_meet evento window</field>
+      <field name="name">Eventos</field>
       <field name="res_model">dev_meet.evento</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <!-- server action to the one above -->
@@ -71,19 +215,19 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="dev_meet" id="dev_meet.menu_root"/>
+    <menuitem name="Developer meet" id="dev_meet.menu_root"/>
 
     <!-- menu categories -->
-    <menuitem name="Management" id="dev_meet.menu_1" parent="dev_meet.menu_root"/>
+    <menuitem name="Gestion" id="dev_meet.menu_1" parent="dev_meet.menu_root"/>
     
     <!-- actions -->
-    <menuitem name="Developer" id="dev_meet.menu_developer_list" parent="dev_meet.menu_1"
+    <menuitem name="Developers" id="dev_meet.menu_developer_list" parent="dev_meet.menu_1"
               action="dev_meet.action_developer_window"/>
 
-    <menuitem name="Tecnologia" id="dev_meet.menu_tecnologia_list" parent="dev_meet.menu_1"
+    <menuitem name="Tecnologias" id="dev_meet.menu_tecnologia_list" parent="dev_meet.menu_1"
               action="dev_meet.action_tecnologia_window"/>
 
-    <menuitem name="Evento" id="dev_meet.menu_eventno_list" parent="dev_meet.menu_1"
+    <menuitem name="Eventos" id="dev_meet.menu_eventno_list" parent="dev_meet.menu_1"
               action="dev_meet.action_evento_window"/>          
 
   </data>

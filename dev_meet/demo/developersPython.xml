@@ -1,0 +1,298 @@
+<odoo>
+<data>
+<record id='16501718G' model='dev_meet.developer'>
+<field name='name'>Xaviera Iskowitz</field>
+<field name='dni'>16501718G</field>
+<field name='birth_year'>2022-01-04</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='02764224H' model='dev_meet.developer'>
+<field name='name'>Nevins Allkins</field>
+<field name='dni'>02764224H</field>
+<field name='birth_year'>2019-09-09</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='45498248M' model='dev_meet.developer'>
+<field name='name'>Sharyl McCartan</field>
+<field name='dni'>45498248M</field>
+<field name='birth_year'>2021-01-30</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='80968310N' model='dev_meet.developer'>
+<field name='name'>Adore Whistance</field>
+<field name='dni'>80968310N</field>
+<field name='birth_year'>2015-08-06</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='23401686C' model='dev_meet.developer'>
+<field name='name'>Lil Lates</field>
+<field name='dni'>23401686C</field>
+<field name='birth_year'>2018-01-26</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='87721612V' model='dev_meet.developer'>
+<field name='name'>Bonnee Hordell</field>
+<field name='dni'>87721612V</field>
+<field name='birth_year'>2021-09-04</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='12131112N' model='dev_meet.developer'>
+<field name='name'>Daffie Winpenny</field>
+<field name='dni'>12131112N</field>
+<field name='birth_year'>2012-11-01</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='88038067R' model='dev_meet.developer'>
+<field name='name'>Chane Cockman</field>
+<field name='dni'>88038067R</field>
+<field name='birth_year'>2012-09-03</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='98579385T' model='dev_meet.developer'>
+<field name='name'>Annmaria Fry</field>
+<field name='dni'>98579385T</field>
+<field name='birth_year'>2018-07-12</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='92391135D' model='dev_meet.developer'>
+<field name='name'>Jerrylee Davidofski</field>
+<field name='dni'>92391135D</field>
+<field name='birth_year'>2018-08-12</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='09205670I' model='dev_meet.developer'>
+<field name='name'>Jakob Jannings</field>
+<field name='dni'>09205670I</field>
+<field name='birth_year'>2014-01-21</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='61156378Q' model='dev_meet.developer'>
+<field name='name'>Faith Sainter</field>
+<field name='dni'>61156378Q</field>
+<field name='birth_year'>2016-04-05</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='07171413L' model='dev_meet.developer'>
+<field name='name'>Kettie Shurmer</field>
+<field name='dni'>07171413L</field>
+<field name='birth_year'>2022-01-22</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='59435388K' model='dev_meet.developer'>
+<field name='name'>Allene Asgodby</field>
+<field name='dni'>59435388K</field>
+<field name='birth_year'>2013-05-12</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='27268201E' model='dev_meet.developer'>
+<field name='name'>Cedric Mattheeuw</field>
+<field name='dni'>27268201E</field>
+<field name='birth_year'>2015-03-01</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='19123958E' model='dev_meet.developer'>
+<field name='name'>Kerby List</field>
+<field name='dni'>19123958E</field>
+<field name='birth_year'>2015-01-29</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='25303265P' model='dev_meet.developer'>
+<field name='name'>Lorenzo Seago</field>
+<field name='dni'>25303265P</field>
+<field name='birth_year'>2019-09-28</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='85034871N' model='dev_meet.developer'>
+<field name='name'>Tabbie Bowhey</field>
+<field name='dni'>85034871N</field>
+<field name='birth_year'>2012-10-09</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='51773113A' model='dev_meet.developer'>
+<field name='name'>Hilary Hannah</field>
+<field name='dni'>51773113A</field>
+<field name='birth_year'>2018-11-20</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='65733174V' model='dev_meet.developer'>
+<field name='name'>Deeanne Kynastone</field>
+<field name='dni'>65733174V</field>
+<field name='birth_year'>2012-03-14</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='75979193S' model='dev_meet.developer'>
+<field name='name'>Allis Bleibaum</field>
+<field name='dni'>75979193S</field>
+<field name='birth_year'>2022-02-03</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='01421967B' model='dev_meet.developer'>
+<field name='name'>Cornelius Hurring</field>
+<field name='dni'>01421967B</field>
+<field name='birth_year'>2020-10-13</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='95589290V' model='dev_meet.developer'>
+<field name='name'>Vittoria Jirieck</field>
+<field name='dni'>95589290V</field>
+<field name='birth_year'>2018-05-28</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='63311163C' model='dev_meet.developer'>
+<field name='name'>Jami McKirdy</field>
+<field name='dni'>63311163C</field>
+<field name='birth_year'>2012-08-26</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='97284989J' model='dev_meet.developer'>
+<field name='name'>Dieter Castana</field>
+<field name='dni'>97284989J</field>
+<field name='birth_year'>2018-12-05</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='89751609I' model='dev_meet.developer'>
+<field name='name'>Andie Boggers</field>
+<field name='dni'>89751609I</field>
+<field name='birth_year'>2018-06-20</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='65712480X' model='dev_meet.developer'>
+<field name='name'>Paco Steeples</field>
+<field name='dni'>65712480X</field>
+<field name='birth_year'>2019-10-11</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='08923488M' model='dev_meet.developer'>
+<field name='name'>Cherise McKinnell</field>
+<field name='dni'>08923488M</field>
+<field name='birth_year'>2018-01-22</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='35243880G' model='dev_meet.developer'>
+<field name='name'>Orrin Rhymes</field>
+<field name='dni'>35243880G</field>
+<field name='birth_year'>2020-09-15</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='35950956L' model='dev_meet.developer'>
+<field name='name'>Agnella Nancekivell</field>
+<field name='dni'>35950956L</field>
+<field name='birth_year'>2019-03-23</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='52093664S' model='dev_meet.developer'>
+<field name='name'>Isa Ousbie</field>
+<field name='dni'>52093664S</field>
+<field name='birth_year'>2018-10-19</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='85876021D' model='dev_meet.developer'>
+<field name='name'>Mahmoud Antill</field>
+<field name='dni'>85876021D</field>
+<field name='birth_year'>2018-06-24</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='26023770D' model='dev_meet.developer'>
+<field name='name'>Jule Steward</field>
+<field name='dni'>26023770D</field>
+<field name='birth_year'>2021-04-12</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='54248548F' model='dev_meet.developer'>
+<field name='name'>Rudie Kasman</field>
+<field name='dni'>54248548F</field>
+<field name='birth_year'>2018-01-20</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='07730385X' model='dev_meet.developer'>
+<field name='name'>Olin Meighan</field>
+<field name='dni'>07730385X</field>
+<field name='birth_year'>2020-06-29</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='76490618U' model='dev_meet.developer'>
+<field name='name'>Gabriela Coster</field>
+<field name='dni'>76490618U</field>
+<field name='birth_year'>2014-07-26</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='71145346D' model='dev_meet.developer'>
+<field name='name'>Adria Murr</field>
+<field name='dni'>71145346D</field>
+<field name='birth_year'>2013-06-28</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='29875666F' model='dev_meet.developer'>
+<field name='name'>Hyacinthia Lavers</field>
+<field name='dni'>29875666F</field>
+<field name='birth_year'>2016-11-12</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='34443870D' model='dev_meet.developer'>
+<field name='name'>Dwain Brand-Hardy</field>
+<field name='dni'>34443870D</field>
+<field name='birth_year'>2019-10-13</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='80542521Q' model='dev_meet.developer'>
+<field name='name'>Whitaker Leyson</field>
+<field name='dni'>80542521Q</field>
+<field name='birth_year'>2020-05-03</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='74230364C' model='dev_meet.developer'>
+<field name='name'>Cammy Drinkale</field>
+<field name='dni'>74230364C</field>
+<field name='birth_year'>2018-03-11</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='56383905V' model='dev_meet.developer'>
+<field name='name'>Gustave Annakin</field>
+<field name='dni'>56383905V</field>
+<field name='birth_year'>2016-01-08</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='89085059L' model='dev_meet.developer'>
+<field name='name'>Malory Standeven</field>
+<field name='dni'>89085059L</field>
+<field name='birth_year'>2012-03-21</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='04116911N' model='dev_meet.developer'>
+<field name='name'>Birk Meaddowcroft</field>
+<field name='dni'>04116911N</field>
+<field name='birth_year'>2016-12-22</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='49954071N' model='dev_meet.developer'>
+<field name='name'>Brooke Eddy</field>
+<field name='dni'>49954071N</field>
+<field name='birth_year'>2019-01-13</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='14763411U' model='dev_meet.developer'>
+<field name='name'>Letti Burles</field>
+<field name='dni'>14763411U</field>
+<field name='birth_year'>2015-05-30</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='99117118G' model='dev_meet.developer'>
+<field name='name'>Nalani Ajean</field>
+<field name='dni'>99117118G</field>
+<field name='birth_year'>2019-09-01</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='98887149S' model='dev_meet.developer'>
+<field name='name'>Bernice Godson</field>
+<field name='dni'>98887149S</field>
+<field name='birth_year'>2022-02-14</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+<record id='01456735N' model='dev_meet.developer'>
+<field name='name'>Marya Osment</field>
+<field name='dni'>01456735N</field>
+<field name='birth_year'>2013-07-29</field>
+<field name="tecnologia" eval="[(6,0,[ref('dev_meet.tecnologia2')])]"></field>
+</record>
+</data>
+</odoo>

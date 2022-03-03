@@ -10,21 +10,24 @@ class developer(models.Model):
     _name = 'dev_meet.developer'
     _description = 'Desarrollador'
 
-    
+    #CAMPOS
     name = fields.Char(string="Nombre", readonly=False, required=True, help='Este es el nombre')
     birth_year = fields.Date(string="Fecha nacimiento")
     dni = fields.Char(string="DNI")
-    photo = fields.Image(max_width=200, max_height=200)
 
 
-
+    #RELACION CON LOS MODELOS
     tecnologia = fields.Many2many(comodel_name='dev_meet.tecnologia',
-                                relation='tecnologia_developer',
-                                column1='developer_id',
-                                column2='tecnologia_id')                            
+                                 relation='tecnologia_developer',
+                                 column1='developer_id',
+                                 column2='tecnologia_id')                            
 
-    evento = fields.Many2many(comodel_name='dev_meet.evento', relation='developer_evento', column1='developer_id', column2='evento_id')
-    
+    evento = fields.Many2many(comodel_name='dev_meet.evento', 
+                              relation='developer_evento', 
+                              column1='developer_id', 
+                              column2='evento_id')
+   
+    #METODO CHECK DNI
     @api.constrains('dni')
     def _check_dni(self):
         regex = re.compile('[0-9]{8}[a-z]\Z', re.I) 
@@ -51,8 +54,7 @@ class tecnologia(models.Model):
                                   column1='tecnologia_id',
                                   column2='developer_id')
 
-    evento = fields.Many2many(comodel_name='dev_meet.evento', relation='tecnologia_evento', column1='tecnologia_id', column2='evento_id')
-    
+    evento = fields.One2many(string="Evento", comodel_name='dev_meet.evento', inverse_name='tecnologia', readonly=True)
 
 class evento(models.Model):
     _name = 'dev_meet.evento'
@@ -63,5 +65,7 @@ class evento(models.Model):
     fechafin = fields.Integer()
     presencial = fields.Boolean()
 
-    tecnologia = fields.Many2many(comodel_name='dev_meet.tecnologia', relation='tecnologia_evento', column1='evento_id', column2='tecnologia_id')
-    developer = fields.Many2many(comodel_name='dev_meet.developer', relation='evento_developer', column1='evento_id', column2='developer_id')
+    developer = fields.Many2many(comodel_name='dev_meet.developer', relation='evento_developer', column1='evento_id', column2='developer_id',readonly=True)
+    tecnologia = fields.Many2one("dev_meet.tecnologia", ondelete='set null', help='Clase a la que pertenece')
+   
+   
