@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "dev_meet",
+    'name': "Developer meet",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Gestiona y simula un sistema de reuniones de desarrolladores""",
 
     'description': """
         Long description of module's purpose
